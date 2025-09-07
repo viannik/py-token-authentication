@@ -97,7 +97,7 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation."
-        "UserAttributeSimilarityValidator",
+                "UserAttributeSimilarityValidator",
     },
     {
         "NAME": "django.contrib.auth.password_validation."
@@ -138,7 +138,7 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 REST_FRAMEWORK = {
-   "DEFAULT_PERMISSION_CLASSES": [
-       "user.permissions.IsAdminOrIfAuthenticatedReadOnly",
-   ]
+    "DEFAULT_PERMISSION_CLASSES": [
+        "user.permissions.IsAdminOrIfAuthenticatedReadOnly",
+    ],
 }
